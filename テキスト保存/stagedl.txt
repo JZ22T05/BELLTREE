@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage</title>
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/dlstage.css">
+
+</head>
+<body>
+  <header>
+    <a href="./home.html">
+      <h1>Bell Tree</h1>
+    </a>
+    <p class="header-title"> </p>
+    <ul class="header-ul">
+      <a class="header-a" href="./how-to.html">
+        <li class="header-li"><img src="../img/use.png" alt=""></li>
+      </a>
+      <a class="header-a" href="./ranking.html">
+        <li class="header-li"><img src="../img/rank.png" alt=""></li>
+      </a>
+      <a class="header-a" href="#">
+        <li class="header-li"><img src="../img/setting.png" alt=""></li>
+      </a>
+      <a class="header-a" href="./how-to.html">
+        <li class="header-li"><img src="../img/login.png" alt=""></li>
+      </a>
+    </ul>
+  </header>
+  <main>
+
+    <div class="dl-class">
+      <div class="dl-img">
+        <div class="container">
+          <img id="rotating-image" src="../img/school/1.jpg" alt="1号館">
+          <img id="next-image" src="../img/school/2.png" alt="2号館" style="opacity: 0;"> <!-- 新しい画像 -->
+        </div>
+      </div>
+      <div class="column">
+        <div class="goukan-name">本館</div>
+        <h2>8F</h2>
+        <p><a href="./suzuki.html">181:AIシステム科実習室Ⅰ</a></p>
+        <p><a href="#">182:AIシステム科実習室Ⅱ</a></p>
+        <h2 class="hidden-floor" style="display: none;">9F</h2>
+        <p class="hidden-room" style="display: none;"><a href="#">9F:BOSS【注意】:理事長ルーム</a></p>
+    
+        <h2>7F</h2>
+        <p><a href="#">171</a></p>
+        <p><a href="#">172</a></p>
+        <h2>6F</h2>
+        <p><a href="#">161:情報システム開発科実習室Ⅰ</a></p>
+        <p><a href="#">162:DXスペシャリスト科実習室Ⅰ</a></p>
+        <h2>5F</h2>
+        <p><a href="#">151:セキュリティ実習室Ⅰ</a></p>
+        <p><a href="#">152</a></p>
+        <p><a href="#">153:DXスペシャリスト科実習室Ⅱ</a></p>
+        <h2>4F</h2>
+        <p><a href="#">キャリアセンター</a></p>
+        <p><a href="#">オープンスペース</a></p>
+        <h2>3F</h2>
+        <p><a href="#">職員室</a></p>
+        <h2>2F</h2>
+        <p><a href="#">広報部</a></p>
+        <h2>1F</h2>
+        <p><a href="#">総合受付</a></p>
+        <p><a href="#">保健室</a></p>
+        <h2>B1F</h2>
+        <p><a href="#">1B11</a></p>
+        <p><a href="#">1B12</a></p>
+        <p><a href="#">1B13</a></p>
+    </div>
+    
+    </div>
+
+  </main>
+
+  <script src="../js/stageselect.js"></script>
+  <!-- JavaScript -->
+
+</body>
+</html>
