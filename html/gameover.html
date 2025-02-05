@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/gameover.css">
+  <script src="../js/bgm-control.js" defer></script>
+  <title>Game Over</title>
+</head>
+<body>
+   <header class="retro-header">
+    <div class="score-board">
+      <span class="score">TIME 00</span>
+      <span class="login"><a href="../php/login.php">LOGIN</a></span>
+      <span class="ranking"><a href="../php/ranking.php">RANKING</a></span>
+      <span class="setting"><a href="#" id="setting-button">SETTING</a></span>
+    </div>
+  </header>
+
+  <div class="game-over-screen">
+    <h1 class="go-h1">Game Over</h1>
+    <p class="continue">もう一度挑戦しますか？</p>
+    <div class="button-container">
+        <button class="btn restart-btn">Continue</button>
+        <button class="btn title-btn">Home</button>
+    </div>
+  </div>
+   <!-- モーダル -->
+   <div id="settings-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Sound Settings</h2>
+      <label>
+        BGM Volume:
+        <input type="range" id="bgm-volume" min="0" max="100" value="50">
+      </label>
+      <div>
+        <button id="bgm-toggle">BGM OFF</button>
+      </div>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+</body>
+<script type="module" src="../js/gameover.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Layout</title>
+  <link rel="stylesheet" href="../css/building.css">
+  <script src="../js/bgm-control.js" defer></script>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="retro-header">
+    <div class="score-board">
+      <span class="home"><a href="../php/home.php">HOME</a></span>
+      <span class="login"><a href="../php/login.php">LOGIN</a></span>
+      <span class="ranking"><a href="../php/ranking.php">RANKING</a></span>
+      <span class="setting"><a href="#" id="setting-button">SETTING</a></span>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="container">
+    <!-- 左側：画像エリア -->
+    <div class="building-image">
+      <img src="../img/school/1.jpg" alt="Main Building">
+    </div>
+
+    <!-- 右側：階層リスト -->
+    <div class="column">
+      <div class="goukan-name">本館</div>
+      <h2 class="hidden-floor" id="boss-floor" style="display: none;">9F</h2>
+  <p class="hidden-room" id="boss-room" style="display: none;">
+    <a href="../html/boss.html">BOSS【注意】:理事長ルーム</a>
+  </p>
+      <h2>8F</h2>
+      <!-- <p><a href="../html/suzuki.html" id="suzuki-link">181:AIシステム科実習室Ⅰ</a></p> -->
+      <p><a href="../php/suzuki.php" id="suzuki-link">181:AIシステム科実習室Ⅰ</a></p>
+      <p><a href="#">182:AIシステム科実習室Ⅱ</a></p>
+      <h2>7F</h2>
+      <p><a href="#">171</a></p>
+      <p><a href="#">172</a></p>
+      <h2>6F</h2>
+      <p><a href="#">161:情報システム開発科実習室Ⅰ</a></p>
+      <p><a href="#">162:DXスペシャリスト科実習室Ⅰ</a></p>
+      <h2>5F</h2>
+      <p><a href="#">151:セキュリティ実習室Ⅰ</a></p>
+      <p><a href="#">152</a></p>
+      <p><a href="#">153:DXスペシャリスト科実習室Ⅱ</a></p>
+      <h2>4F</h2>
+      <p><a href="#">キャリアセンター</a></p>
+      <p><a href="#">オープンスペース</a></p>
+      <h2>3F</h2>
+      <p><a href="#">職員室</a></p>
+      <h2>2F</h2>
+      <p><a href="#">広報部</a></p>
+      <h2>1F</h2>
+      <p><a href="#">総合受付</a></p>
+      <p><a href="#">保健室</a></p>
+      <h2>B1F</h2>
+      <p><a href="#">1B11</a></p>
+      <p><a href="#">1B12</a></p>
+      <p><a href="#">1B13</a></p>
+    </div>
+
+     <!-- モーダル -->
+  <div id="settings-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Sound Settings</h2>
+      <label>
+        BGM Volume:
+        <input type="range" id="bgm-volume" min="0" max="100" value="50">
+      </label>
+      <div>
+        <button id="bgm-toggle">BGM OFF</button>
+      </div>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  </main>
+</body>
+<script src="../js/stageselect.js"></script>
+</html>

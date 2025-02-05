@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/how-to.css">
+    <script src="../js/how-to-block.js" defer></script>
+    <title>Bell Tree.com</title>
+</head>
+
+<body class="how-to-block-body">
+    <header class="retro-header">
+        <div class="score-board">
+          <span class="score">TIME 00</span>
+          <span class="login"><a href="../php/login.php">LOGIN</a></span>
+          <span class="ranking"><a href="../php/ranking.php">RANKING</a></span>
+          <span class="setting"><a href="#" id="setting-button">SETTING</a></span>
+        </div>
+      </header>
+    <main>
+        <div class="pulldown">
+            <div class="pulldown1">
+                <div class="in-pulldown">
+                    <p>移動ノード</p>
+                    <select required id="pulldown1">
+                        <option value="" hidden>ブロックを選択</option>
+                        <option value="前">前進</option>
+                        <option value="後">後進</option>
+                        <option value="ジャンプ">ジャンプ</option>
+                        <option value="停止">停止</option>
+                    </select>
+                </div>
+                <div class="description">
+                    <p id="elDescription1">説明がここに表示されます。</p>
+                </div>
+            </div>
+            <div class="pulldown2">
+                <div class="in-pulldown">
+                    <p>ループノード</p>
+                    <select required id="pulldown2">
+                        <option value="" hidden>ブロックを選択</option>
+                        <option value="[">[ル－プ開始</option>
+                        <option value="]">]ループ終了</option>
+                    </select>
+                </div>
+                <div class="description">
+                    <p id="elDescription2">説明がここに表示されます。</p>
+                </div>
+            </div>
+            <div class="pulldown3">
+                <div class="in-pulldown">
+                    <p>条件ノード</p>
+                    <select required id="pulldown3">
+                        <option value="" hidden>ブロックを選択</option>
+                        <option value="IF[">IF(条件)</option>
+                        <option value="IF文終了">IF文終了</option>
+                    </select>
+                </div>
+                <div class="description">
+                    <p id="elDescription3">説明がここに表示されます。</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <div class="how-to-select">
+            <a class="how-to-btn" href="../html/how-to.html">プレイ画面説明</a>
+            <a class="how-to-btn" href="../php/suzuki.php">戻る</a>
+        </div>
+    </footer>
+</body>
+
+</html>

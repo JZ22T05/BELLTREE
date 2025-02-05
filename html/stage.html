@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage Select</title>
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/stage2.css">
+
+</head>
+<body>
+  <header>
+    <a href="../html/home.html">
+      <h1>Bell Tree</h1>
+    </a>
+    <p class="header-title"> </p>
+    <ul class="header-ul">
+      <a class="header-a" href="../html/how-to.html">
+        <li class="header-li"><img src="../img/use.png" alt=""></li>
+      </a>
+      <a class="header-a" href="../php/ranking.php">
+        <li class="header-li"><img src="../img/rank.png" alt=""></li>
+      </a>
+      <a class="header-a" href="#">
+        <li class="header-li"><img src="../img/setting.png" alt=""></li>
+      </a>
+      <a class="header-a" href="../html/how-to.html">
+        <li class="header-li"><img src="../img/login.png" alt=""></li>
+      </a>
+    </ul>
+  </header>
+
+  <!-- 号館表示エリア -->
+  <div class="container">
+    <div class="map-container">
+      <div class="stage-name" id="stage-name"><p></p></div>
+      <div class="map">
+        <!-- ステージポイントはそのまま -->
+        <a href="../html/stagedl.html" class="stage-point" id="stage1" data-name="本館" data-info="難易度:★☆☆☆☆" data-img="../img/school/1.png" style="top: 35%; left: 52%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage2" data-name="4号館" data-info="難易度:★★☆☆☆" data-img="../img/school/4.png" style="top: 37%; left: 54%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage3" data-name="3号館" data-info="難易度:★★☆☆☆" data-img="../img/school/3.png" style="top: 49%; left: 52%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage4" data-name="8号館" data-info="難易度:★☆☆☆☆" data-img="../img/school/8.png" style="top: 25%; left: 44%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage5" data-name="10号館" data-info="難易度:★☆☆☆☆" data-img="../img/school/10.png" style="top: 33%; left: 61%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage6" data-name="9号館" data-info="難易度:★☆☆☆☆" data-img="../img/school/9.png" style="top: 29%; left: 58.5%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage7" data-name="2号館" data-info="難易度:★☆☆☆☆" data-img="../img/school/2.png" style="top: 26%; left: 56.5%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage8" data-name="6号館" data-info="難易度:★★★★☆" data-img="../img/school/6.png" style="top: 20%; left: 52%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage9" data-name="12号館" data-info="難易度:★★★★★" data-img="../img/school/12.png" style="top: 59%; left: 37%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage10" data-name="13号館" data-info="難易度:★★★★★" data-img="../img/school/13.png" style="top: 57%; left: 72.5%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage11" data-name="11号館" data-info="難易度:★★★★★" data-img="../img/school/11.png" style="top: 46%; left: 75%;"></a>
+        <a href="../html/stagedl.html" class="stage-point" id="stage12" data-name="7号館" data-info="難易度:★★★☆☆" data-img="../img/school/7.png" style="top: 0; left: 58%;"></a> </div>
+      <div id="map-info" class="map-info">
+        <div class="stage-info" id="stage-info"></div>
+        <img id="stage-image" src="" alt="" style="display: none; max-width: 100%; height: auto;">
+        <img id="stage-description" src="" alt="" style="display: none; max-width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer"></div>
+  </footer>
+
+  <script src="../js/stageselect.js"></script>
+</body>
+</html>
