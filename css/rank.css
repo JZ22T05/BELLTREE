@@ -1,0 +1,244 @@
+html{
+  background: #ffffff;
+}
+a{ 
+   color: #ffffff;
+}
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rank2-img {
+  opacity: 0; 
+  transition: opacity 1.5s ease-in-out 2s; 
+}
+.rank-main.loaded .rank2-img {
+  opacity: 1; 
+}
+.dai1, .dai2, .dai3 {
+  width: 140px; 
+  height: 0; 
+  margin: 0 10px;
+  background: #E4DFAA; 
+  transform-origin: bottom; 
+  opacity: 0; 
+  transition: opacity 1s ease-out 0.5s, height 1.5s ease-out; 
+}
+
+.rank-main.loaded .dai1 {
+  height: 140px; 
+  opacity: 1; 
+}
+
+.rank-main.loaded .dai2 {
+  height: 120px; 
+  opacity: 1;
+}
+
+.rank-main.loaded .dai3 {
+  height: 110px; 
+  opacity: 1;
+}
+
+.rank1, .rank2, .rank3, .name1, .name2, .name3, .score1, .score2, .score3 {
+  opacity: 0; 
+  transition: opacity 1.5s ease-in-out 1.5s; 
+}
+
+.rank-main.loaded .rank1, .rank-main.loaded .name1, .rank-main.loaded .score1 {
+  opacity: 1;
+}
+
+.rank-main.loaded .rank2, .rank-main.loaded .name2, .rank-main.loaded .score2 {
+  opacity: 1; 
+}
+
+.rank-main.loaded .rank3, .rank-main.loaded .name3, .rank-main.loaded .score3 {
+  opacity: 1;
+}
+
+/*left-------------------------------------*/
+.left{
+  display: flex;
+  flex-direction: column;
+  width:  25%;
+  height: 85vh;
+  background: #c6cad5;
+}
+.left-side{
+  width: 60%;
+ font-size: 1.5rem;
+ padding: 3px 5px;
+  margin: 3% 0 0 20%;
+  border-bottom: 2px solid #fff;
+  transition: all 0.2s ease-in-out;
+}
+#top-margin{
+  margin-top: 10vh;
+}
+/*center--------------------------------*/
+h2 {
+  float: center;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: bolder;
+  font-family: 'Press Start 2P', sans-serif;
+}
+.stage_name{
+  margin: 0;
+  font-size: 2.5rem;
+  color: #2B2D4D;
+  text-align: center;
+  font-family: 'Press Start 2P', sans-serif;
+}
+.no-rank{
+  font: 10.0rem;
+  text-align: center;
+  color: #2B2D4D;;
+}
+.center{
+  width: 50%;
+  margin-top: 15vh;
+}
+.rank-img {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rank-img img {
+  width: 100%;
+}
+
+.rank-dai {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 15%;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  position: absolute;
+  font-weight: bolder;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dai2 {
+  width: 150px;
+  margin: 0 10px;
+  background: #E3E3E3;
+  box-shadow: 3px 3px 5px 0px rgba(59, 57, 69, 0.4);
+}
+
+.dai1 {
+  width: 160px;
+  margin: 0 10px;
+  background: #E4DFAA;
+  box-shadow: 3px 3px 5px 0px rgba(59, 57, 69, 0.4);
+}
+
+.dai3 {
+  width: 140px;
+  margin: 0 10px;
+  background: #D1965F;
+  box-shadow: 3px 3px 5px 0px rgba(59, 57, 69, 0.4);
+}
+
+.rank-main {
+  position: relative;
+  margin: 10% 0;
+}
+
+.name {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.rank1, .rank2, .rank3 {
+  margin: 7px 0;
+}
+
+
+.score1, .score2, .score3 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.score1, .name1 {
+  color: #8E8847;
+}
+
+.score2, .name2 {
+  color: #636363;
+}
+
+.score3, .name3 {
+  color: #77410F;
+}
+/*right-----------------------------*/
+.right{
+margin-top: 10vh;
+}
+.rank4-9 {
+  width: 25%;
+}
+
+.rank {
+  width: 60%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  background: #E7E9EE;
+  border: #fff 2px solid;
+  color: #5c5c5c;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  box-shadow: 3px 3px 5px 0px rgba(59, 57, 69, 0.4);
+}
+
+.rank-rank {
+  font-size: 1.4rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #5c5c5c;
+
+}
+
+.rank-name {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.rank-score {
+  text-align: center;
+  font-size: 1.4rem;
+
+}
+
+
+/*hover---------------------------------*/
+
+.center>a:hover , .right>a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.left>a:hover{
+  color: #2B2D4D;
+  border-color: #2B2D4D;
+}
+
+.dai1:hover, .dai2:hover, .dai3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

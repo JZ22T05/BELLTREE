@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a3c;
+  color: #ffffff;
+  font-family: 'Press Start 2P', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.error-title {
+  font-size: 6rem;
+  color: #ff0000;
+  text-shadow: 4px 4px #000000;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.error-actions {
+  margin: 20px 0;
+}
+
+.error-button {
+  background-color: #d3d3d3;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #414855;
+  box-shadow: 2px 2px #61656e;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.error-button:hover {
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.error-animation {
+  margin-top: 20px;
+}
+
+.error-image {
+  width: 200px;
+  height: auto;
+  image-rendering: pixelated;
+  margin-bottom: 20px;
+}
+
+.blinking-text {
+  font-size: 1.2rem;
+  color: #ffff00;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

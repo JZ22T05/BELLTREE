@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+html{
+    background: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+  }
+  
+
+/*--------------------*/
+h2 {
+    width: 100%;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: bolder;
+    font-family: 'Press Start 2P', sans-serif;
+  }
+  .algorithm-h2 {
+    position: absolute;
+    
+  
+}
+
+.algorithm-main{
+    display: flex;
+    height: 90vh;
+}
+
+.alogrithm {
+    position: fixed; 
+    border-right: #252742 2px solid;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    overflow-y: auto; 
+    height: calc(100vh - 60vh); 
+}
+ .main-score{
+    margin: auto;
+    width: 80%;
+    height: 40vh;
+    color: #252742;
+    font-family: 'Press Start 2P', sans-serif;
+ }
+.score-main{
+    display: flex;
+    width: 60%;
+    height: 40vh;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bolder;
+    color: #252742;
+    border-radius: 10px;
+}
+.node{
+    margin: 20px auto;
+    color: #252742;
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 25px;
+    border: #252742 3px solid;
+    box-shadow: 3px 3px 5px 0px rgba(59, 57, 69, 0.4);
+    text-align: center;
+    padding: 10px 0;
+    /* border-radius: 10px; */
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.score-img-suzuki img, .score-img-torofi- img{
+    width: 100%;
+    height: 100%;
+
+}
+.score-img-suzuki{
+    height: 150px;
+    width: 150px;
+}
+.score-img-torofi-{
+    height: 100px;
+    width: 120px;
+}
+.score-date{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.score-width{
+    width: 30%;
+}
+.score-date p{
+
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+
+  
+  /*------------footer---------------*/
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a3c;
+    z-index: 100;
+
+  }
+.btn{
+    width: 15%;
+    border: #ffffff 1px solid;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+/*------------------score-----------------------------*/
+.scorepage{
+    background: #1a1a3c;
+    height: 100vh;
+    font-family: 'Press Start 2P', sans-serif;
+}
+.score-h2 {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 5.5rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px rgb(0, 106, 255);
+    padding-bottom: 10px;
+    animation: blink 0.3s infinite alternate;
+}
+.clear_time{
+    margin-left: 10%;
+    margin-bottom: 15px;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    color: rgb(255, 140, 0);;
+
+}
+.clear_time_time{
+    color: rgb(255, 140, 0);;
+    font-size: 3.0rem;
+    font-weight: bolder;
+}
+.score-main-score{
+    margin: 0 0 0 10% ;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.score_node {
+    margin: 20px auto;
+    color: #252742;
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 25px;
+    border: rgb(255, 230, 0) 3px solid;
+    box-shadow: 3px 3px 5px 0px rgba(59, 57, 69, 0.4);
+    text-align: center;
+    padding: 10px 0;
+    /* border-radius: 10px; */
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.sccore_alogrithm {
+    position: fixed; 
+    transform: translate(-50%, -50%);
+    width: 30%;
+    overflow-y: auto; 
+    height: calc(100vh - 60vh); 
+    border-right:rgb(255, 230, 0) 2px solid;
+    top: 55%;
+    left: 65%;
+}
+.score_footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 9vh;
+    background: #252742;
+    border-top: 4px solid #333;
+}
+.copyright {
+    position: fixed;
+    bottom: 1vh;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(255, 230, 0);
+    font-family: 'Press Start 2P', sans-serif;
+}

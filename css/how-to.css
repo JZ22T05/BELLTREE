@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+/*------------header---------------*/
+header.retro-header {
+  width: 100%;
+  background-color: #1a1a3c;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #333;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.login-name{
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 1.5rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.score-board a{
+  text-decoration: none;
+  color: white;
+}
+.score, .high-score {
+  margin: 0 20px;
+}
+  
+  
+  /*------------main---------------*/
+  body {
+
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    color: #2B2D4D;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px rgb(255, 230, 0);
+    padding-bottom: 10px;
+    animation: blink 0.3s infinite alternate;
+    font-family: 'DotGothic16', sans-serif;
+  }
+  
+  .main-how-to {
+    height: 100%;
+    margin:0 auto ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .how-to-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main-how-to div {
+    width: 40%;
+    height: 100%;
+  }
+  
+  .description {
+    color: #2B2D4D;
+    font-family: 'DotGothic16', sans-serif;
+  }
+  
+  
+  /*------------main2---------------*/
+  .how-to-block-body {
+    background: #2B2D4D;
+  }
+  
+  .pulldown1,
+  .pulldown2,
+  .pulldown3,
+  .pulldown4,
+  .pulldown5 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 10px 20%;
+  }
+  .pulldown{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+  }
+  .pulldown .description {
+    color: #ffffff;
+    max-width: 30%;
+  }
+  
+  .in-pulldown p {
+    color: #ffffff;
+  }
+  
+  select {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    text-align-last: center;
+  }
+  
+  option {
+    color: #2B2D4D;
+  }
+  
+  /*------------footer---------------*/
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a3c;
+    z-index: 100;
+
+  }
+  
+  .how-to-select {
+    background: #1a1a3c;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .how-to-btn {
+    width: 15%;
+    border: #ffffff 1px solid;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  .description{
+    font-size: 1.3rem;
+  
+  }
+  
+  /*---------------*/
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }

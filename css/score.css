@@ -1,0 +1,138 @@
+body {
+    background-color: #fff;
+    padding-bottom: 15vh; /* フッターの高さ分の余白を追加 */
+    box-sizing: border-box;
+}
+
+/*--------------------*/
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3.0rem;
+}
+
+/* スコアセクションの設定 */
+.score-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap; /* 画面幅に応じて要素が折り返す */
+    margin-bottom: 20px; /* フッターとの距離を確保 */
+}
+
+.score-img-suzuki img, .score-img-torofi- img {
+    width: 100%;
+    height: auto; /* 画像のアスペクト比を保持 */
+}
+
+.score-img-suzuki {
+    height: auto;
+    width: 150px;
+    max-width: 30vw;
+}
+
+.score-img-torofi- {
+    height: auto;
+    width: 120px;
+    max-width: 20vw;
+}
+
+.score-width {
+    width: 20%;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.score-date {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.score-date p {
+    font-size: 2.0rem;
+    font-weight: bolder;
+}
+
+/* フッターの設定 */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background: #252742;
+    z-index: 10;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.btn {
+    width: 25%;
+    min-width: 100px;
+    max-width: 200px;
+    border: #ffffff 1px solid;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #1a1c33;
+    color: #ffffff;
+}
+
+/* レスポンシブ設定 */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 15%;
+    }
+
+    .score-width {
+        width: 40%;
+    }
+
+    .score-date p {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 45%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .score-width {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    footer {
+        height: 12vh; /* 小さい画面でフッターの高さを少し増やす */
+    }
+}

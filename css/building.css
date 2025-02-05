@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #1a1a3c;
+  color: #ffffff;
+  font-family: 'Press Start 2P', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header.retro-header {
+  width: 100%;
+  background-color: #1a1a3c;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #333;
+}
+
+.login-name {
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 1.5rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.score-board a {
+  text-decoration: none;
+  color: white;
+}
+
+.score,
+.high-score {
+  margin: 0 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+  height: 70vh;
+  /* 全体の高さを制限 */
+}
+
+.scroll {
+  max-height: calc(59vh - 34px);
+  overflow-y: auto;
+  /* 縦スクロールを有効にする */
+  padding-right: 10px;
+  /* スクロールバーとの間に余白を設ける */
+  background-color: #1a1a3c;
+  /* 背景色の設定（任意） */
+
+}
+
+.goukan-name {
+  position: sticky;
+  /* スクロール時に固定 */
+  top: 0;
+  /* 固定位置の指定 */
+  z-index: 10;
+  /* 他の要素よりも上に表示 */
+  background-color: #1a1a3c;
+  /* 背景色を設定して固定要素と重なりを解消 */
+  padding: 10px 0;
+  /* 余白の調整 */
+}
+
+
+
+.column {
+  flex: 1;
+}
+
+
+/* 左側画像エリア */
+.building-image {
+  flex: 1;
+  margin-top: 16vh;
+  margin-right: 20px;
+}
+
+.building-image img {
+  width: 100%;
+  height: 50vh;
+  object-fit: contain;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+
+/* 点滅アニメーション */
+@keyframes blink {
+  0% {
+    opacity: 1;
+    /* 完全に表示 */
+  }
+
+  100% {
+    opacity: 0.5;
+    /* 半透明 */
+  }
+}
+
+.goukan-name {
+  font-family: 'DotGothic16', sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px rgb(0, 106, 255);
+  /* テキストシャドウ */
+  padding-bottom: 10px;
+  animation: blink 0.3s infinite alternate;
+  /* 点滅アニメーション */
+}
+
+.kaisuu {
+  display: flex;
+  border-bottom: 2px solid #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3% 0;
+}
+
+.kyousitu {
+  display: flex;
+
+}
+
+.column p {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+
+
+}
+
+.column a {
+  color: #ffffff;
+  margin-right: 25px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.column a:hover {
+  color: rgb(255, 230, 0);
+}
+
+.column h2 {
+  font-size: 1.8rem;
+
+  color: rgb(255, 140, 0);
+  cursor: pointer;
+  /* クリック可能にする */
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+
+
+/* モーダルスタイル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 26, 60, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #2e2e3d;
+  color: rgb(255, 140, 0);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.modal-content input[type="range"] {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #d3d3d3;
+  color: black;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-family: 'Press Start 2P', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.modal-content button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+
+/* 背景の赤黒点滅 */
+@keyframes danger-flash {
+  0% {
+    background-color: #1a1a3c;
+  }
+
+  50% {
+    background-color: #8b0000;
+  }
+
+  100% {
+    background-color: #1a1a3c;
+  }
+}
+
+/* 点滅する警告テキスト */
+@keyframes warning-blink {
+  0% {
+    color: #ffffff;
+  }
+
+  50% {
+    color: #ff0000;
+  }
+
+  100% {
+    color: #ffffff;
+  }
+}
+
+/* 隠しステージ表示時の背景点滅 */
+.hidden-stage-active {
+  animation: danger-flash 1s infinite;
+}
+
+/* 警告テキスト */
+.warning-text {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+  animation: warning-blink 0.5s infinite;
+}
+
+.disabled-stage {
+  color: gray !important;
+  /* 色をグレーに */
+  pointer-events: none;
+  /* クリックを無効化 */
+  text-decoration: line-through;
+  /* 取り消し線をつける */
+}
+
+/*------------footer-----------------------*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 9vh;
+  background: #252742;
+  border-top: 4px solid #333;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 1vh;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(255, 230, 0);
+}

@@ -1,0 +1,28 @@
+ @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #2B2D4D;
+  font-family: 'DotGothic16', sans-serif;
+  overflow: hidden; 
+}
+
+.background-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  z-index: 0;
+}
+
+
+.star {
+  position: absolute;
+  background: url("../img/star.png") no-repeat center;
+  background-size: contain;
+  pointer-events: none; 
+  opacity: 0; 
+} 
+ 
