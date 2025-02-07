@@ -94,58 +94,6 @@ header.retro-header {
 
 
 
-/* ポップアップの背景 */
-#map-popup {
-  display: none; /* 初期状態で非表示 */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-
-/* ポップアップの内容 */
-#map-popup-content {
-  position: relative;
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 90%;
-  max-height: 90%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* マップ画像 */
-#map-full {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* 閉じるボタン */
-#close-map-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-
-
-
 /* ------------ドラッグアンドドロップスタイル--------------- */
 
 /* ブロックパレット */
@@ -324,71 +272,7 @@ header.retro-header {
   color: #ffffff;
 }
 
-/* モーダル */
-.modal {
-  display: flex; /* 表示させる */
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000; /* 前面に表示 */
-}
 
-.map-modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 80%;
-  text-align: center;
-}
-
-.modal-btn {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  background-color: #444;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.modal-btn:hover {
-  background-color: #f13939;
-}
-
-.map-image {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  z-index: 999;
-}
-
-.hidden {
-  display: none;
-}
-
-
-.close-map-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-}
 
 /* ポップアップのオーバーレイ */
 #popup-overlay {
@@ -517,6 +401,10 @@ header.retro-header {
   font-family: 'Press Start 2P', sans-serif;
 }
 
+.modal-content p{
+  font-family: 'DotGothic16', sans-serif;
+}
+
 .modal-content input[type="range"] {
   width: 100%;
   margin-top: 30px;
@@ -543,4 +431,72 @@ header.retro-header {
 .modal-content button:active {
   transform: scale(0.95);
   box-shadow: none;
+}
+
+
+
+モーダル
+.modal {
+  display: flex; /* 表示させる */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000; /* 前面に表示 */
+}
+
+.map-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.modal-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: #f13939;
+}
+
+.map-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.close-map-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
 }
